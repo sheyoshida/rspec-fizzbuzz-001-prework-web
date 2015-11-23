@@ -1,11 +1,15 @@
+
 def fizzbuzz(int)
-    if (int % 3 == 0) && (int % 5 == 0)
+   
+   divisibleBy3 = (int % 3 == 0)
+   divisibleBy5 = (int % 5 == 0)
+case
+    when divisibleBy3 && divisibleBy5
         "FizzBuzz"
-        elseif (int % 3 == 0)
+        when divisibleBy3
         "Fizz"
-        elseif (int % 5 == 0)
+        when divisibleBy5
         "Buzz"
-        else
-        nil
+        else nil
     end
 end
